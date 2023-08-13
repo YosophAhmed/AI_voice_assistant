@@ -34,8 +34,11 @@ class OpenAIService {
         content = content.trim();
         switch (content) {
           case 'Yes':
+            return await dallEAPI(prompt);
           case 'yes':
+            return await dallEAPI(prompt);
           case 'Yes.':
+            return await dallEAPI(prompt);
           case 'yes.':
             return await dallEAPI(prompt);
           default:
